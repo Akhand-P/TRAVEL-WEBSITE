@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+/* utility classes*/
+.bg-dark{
+    background-color: #263238;
+}
+.container{
+    max-width: 102rem;
+    width: 90%;
+    margin: 0 auto;
+}
+.lg-heading{
+    font-size: 2.5rem;
+}
+.md-heading{
+    font-size: 1.6rem;
+}
+
+.text-red{
+    color: #e63946;
+}
+.text-light{
+    color:#f4f4f4;
+}
+.text-black{
+    color:#333333;
+}
+.text-grey{
+    color: #555555;
+}
+
+
+
+/*NAVIGATION BAR CSS*/
+
+
+.new-item a:hover{
+    border-bottom: 2px solid #f4f4f4;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.logo, .nav-bar a{
+    
+    text-decoration: none;
+}
+.nav-bar li{
+   
+    display: inline-block;
+    padding: 1rem;
+}
+p,li{
+    
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+
+h1,h2,h3{
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+}
+
+.nav-bar{
+   
+    padding: 1rem;
+}
+.nav-bar .logo {
+    float: left;
+    margin-top: 1rem;
+}
+.nav-bar .nav-items{
+    float: right;
+    /*font-size: 1.5rem;*/
+}
+body .header{
+    height: 95vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../Photos/header-image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.clearfix{
+    overflow: auto;
+}
+
+
+
+
+/*####### BUTTON UTILITY CLASS ######*/
+.btn{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    margin: 0.5em 0;
+    text-decoration: none;
+    border-radius: 10rem;
+}
+.btn-primary{
+    background-color: #ddd;
+    font-size: 1.5rem;
+}
+.btn-primary:hover{
+    background-color: rgb(145, 140, 130);
+}
+.btn-secondary{
+    background-color: #ddd;
+    font-size: 1.2rem;
+    border: 2px solid #e63946;
+    
+}
+.btn-secondary:hover{
+    background-color: rgb(145, 140, 130);
+}
+
+/* HEADER CONTENT CSS*/
+.header-content{
+    text-align: center;
+    margin-top: 25rem;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+    
+    
+}
+.header-content h1{
+    font-weight: 500;
+}
+
+/* SHOWCASE SECTION CSS*/
+
+.showcase{
+    background-color: #ddd;
+    padding: 10rem 0;
+}
+.row{
+    height: 32rem;  /*size of each box*/
+    box-shadow: 0px 0px 20px 0px #aaa;
+    
+}
+.row1{
+    margin-bottom: 10rem ;
+}
+
+.row1 .img-box,.row2 .text-box{
+    float: left;
+    width: 50%;
+}
+.row2 .img-box,.row1 .text-box{
+    float: right;
+    width: 50%;
+}
+.row1 .img-box{
+   
+    height:100%;
+    width:50%;
+
+}
+
+.row .text-box{
+    height: 100%;
+    width: 50%;
+    font-size: 1.6rem;
+    padding: 3rem;
+    background-color: white;
+    
+   
+}
+row::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.row .img-box img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* FEATURE CSS*/
+.feature{
+  padding: 7rem 0;
+}
+.box-wrapper{
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.341)(0, 0, 0, 0.484);
+}
+.feat{
+    padding: 2rem;
+    color: white;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+.feature1{
+    float: left;
+    width: 34rem;
+    height:20rem;
+    background-color:#17092fb5;
+    
+}
+.feature2{
+    float: left;
+    width: 34rem;
+    background-color: #e63946;
+    height: 20rem;
+}
+.feature3{
+    float: left;
+    width: 34rem;
+    height: 20rem;
+    background-color:#17092fb5;
+ 
+}
+.clearfixx{
+    clear: both;
+}
+
+
+/* ########## Foooter CSS ########*/
+
+.footer {
+    text-align: center;
+    font-size: 1.6rem;
+    color: white;
+    background-color: #17092fb5;
+}
+
+.fa-brands{
+    font-size: 2.5rem;
+    color: white;
+    padding: 1.7rem;
+}
+
+
+/*########### ABOUT PAGE CSS ##########*/
+.about-section{
+    margin-top: 5rem;
+}
+.about-head{
+    border-bottom: 0.51rem solid #e63946;
+    width: auto;
+   
+}
+.about-section .box1{
+    display: inline-block;
+    padding-left: 15%;
+    padding-top: 2%;
+    float: left;
+}
+.about-section .box2{
+    display: inline-block;
+    padding-right: 15%;
+    padding-top: 2%;
+    float: right;
+}
+.tick::before{
+    content: '\2713';
+    padding-right: 1rem;
+    color: #e63946;
+}
+.counts .count-item{
+    float: left;
+    width: 25%;
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: 500;
+    
+}
+.counts{
+    margin-top: 2rem;
+}
+.count-item p{
+    font-weight: bold;
+}
+.count-item span{
+    color: #e63946;
+    font-weight: 500;
+}
